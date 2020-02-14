@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+    <!-- JavaScript Opcional -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/validatePassword.js"></script>
+    <script type="text/javascript" src="js/maskFone.js"></script>
+
+    <title>Login</title>
+</head>
+
+<body class="body">
+
+    <div class="container">
+
+        <!-- TABS -->
+        <ul class="nav nav-pills mb-3" id="pills-tab">
+            <li class="nav-item">
+                <a class="nav-link active title text-decoration-none text-light" data-toggle="pill" href="#pills-home"
+                    role="tab" aria-controls="pills-home" aria-selected="true">Entrar</a>
+            </li>
+
+            <li class="mr-auto"></li>
+
+            <li class="nav-item">
+                <a class="nav-link title text-decoration-none text-light" data-toggle="pill" href="#pills-profile"
+                    role="tab" aria-controls="pills-profile" aria-selected="false">Registra-se</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+
+            <!-- Entrar -->
+            <div class="tab-pane fade show active" id="pills-home">
+                <form action="." method="GET" id="form-login">
+
+                    <fieldset>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control input" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control input" placeholder="Senha">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck">
+                                <label class="custom-control-label text-light" for="customCheck">Lembrar de mim</label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-action button">Entrar</button>
+
+                        <input type="button" class="btn btn-link button-link text-decoration-none next"
+                            value="Esqueceu sua senha? Clique aqui" />
+                    </fieldset>
+                    
+                  
+                    <fieldset>
+
+                        <h6 class="text-light">Encontre sua conta</h6>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control input"
+                                placeholder="Insira seu email de recuperação">
+                        </div>
+
+                        <input type="button" class="btn btn-action button button-line previous" value="Voltar" />
+
+                        <input type="button" class="btn btn-action button button-line float-right next"
+                            value="Próximo" />
+
+                    </fieldset>
+
+                    <fieldset>
+                        <h6 class="text-light">Qual método deseja receber o código de redefinição de senha?</h6>
+
+                        <table class="table text-light">
+                            <tbody>
+                                <tr>
+                                    <div class="form-group text-light">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input"
+                                                id="customControlValidation2" name="radio-stacked">
+                                            <label class="custom-control-label text-light"
+                                                for="customControlValidation2">Enviar
+                                                código por EMAIL</label>
+                                            <small class="form-text">mayconyamamotto54@gmail.com</small>
+                                        </div>
+                                    </div>
+                                </tr>
+
+                                <tr>
+                                    <div class="form-group text-light">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input"
+                                                id="customControlValidation3" name="radio-stacked">
+                                            <label class="custom-control-label text-light"
+                                                for="customControlValidation3">Enviar
+                                                código por SMS</label>
+                                            <small class="form-text">+***********34</small>
+                                        </div>
+                                    </div>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <input type="button" class="btn btn-action button button-line previous" value="Voltar" />
+
+                        <input type="button" class="btn btn-action button button-line float-right next"
+                            value="Próximo" />
+
+                    </fieldset>
+
+                    <fieldset>
+                        <h6 class="text-light">Verifique se você recebeu o seu código. Ele tem 6 digitos</h6>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control input" placeholder="Insira o código" maxlength="6">
+                        </div>
+
+                        <input type="button" class="btn btn-action button button-line previous" value="Voltar" />
+
+                        <input type="button" class="btn btn-action button button-line float-right next"
+                            value="Próximo" />
+
+                    </fieldset>
+
+                    <fieldset>
+                        <h6 class="text-light">Crie uma nova senha que contenha pelo menos 8 caracteres.</h6>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control input" id="password" placeholder="Nova senha"
+                                minlength="8" maxlength="32">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control input" id="confirm_password"
+                                placeholder="Confirmar senha" minlength="8" maxlength="32">
+                        </div>
+
+                        <input type="submit" class="btn btn-action button button-line float-right next"
+                            value="Confirmar" />
+
+                    </fieldset>
+                
+                </form>
+
+            </div>
+
+            <!-- Registrar -->
+            <div class="tab-pane fade" id="pills-profile">
+
+                <form action="." method="GET" id="form-register">
+
+                    <div class="form-group">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <fieldset>
+                        <div class="form-group">
+                            <input type="text" class="form-control input" placeholder="Nome">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control input" placeholder="Sobrenome">
+                        </div>
+
+                        <input type="button" class="btn btn-action button next" value="Proximo" />
+                    </fieldset>
+
+
+                    <fieldset>
+                        <div class="form-group">
+                            <input type="text" class="form-control input" placeholder="Nome de usuário">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control input" id="celular" placeholder="Celular">
+                        </div>
+
+                        <input type="button" class="btn btn-action button button-line previous" value="Voltar" />
+
+                        <input type="button" class="btn btn-action button button-line float-right next"
+                            value="Próximo" />
+
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-group">
+                            <input type="email" class="form-control input" placeholder="Seu melhor Email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control input" id="password" placeholder="Senha" minlength="8" maxlength="32">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control input" id="confirm_password"
+                                placeholder="Confirmar senha" minlength="8" maxlength="32">
+                        </div>
+
+                        <input type="button" class="btn btn-action button button-line previous" value="Voltar" />
+
+                        <input type="submit" class="btn btn-action button button-line float-right" value="Cadastrar"
+                            onclick="validatePassword()" />
+
+                    </fieldset>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
